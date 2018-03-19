@@ -41,3 +41,9 @@ class CalculadoraTest(TestCase):
     def test_max_dos_numeros(self):
         self.assertEqual(Calculadora().max("1,2"),2,"Dos numeros ")
         self.assertEqual(Calculadora().max("4,2"),4, "Dos numeros ")
+
+
+    def test_max_n_numeros(self):
+        self.assertEqual(Calculadora().max("2,1,3"),3,"tres numeros ")
+        self.assertEqual(Calculadora().max("2,1,1,4"),4,"cuatro numeros ")
+
