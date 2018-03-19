@@ -51,3 +51,7 @@ class CalculadoraTest(TestCase):
     def test_promedio(self):
         self.assertEqual(Calculadora().prom(""),0,"Cadena Vacia")
 
+
+    def test_promedio_un_numero(self):
+        self.assertEqual(Calculadora().prom("1"), 1, "Un numero")
+        self.assertEqual(Calculadora().prom("10"), 10, "Un numero")
