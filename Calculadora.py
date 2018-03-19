@@ -43,5 +43,9 @@ class Calculadora:
             return float(cadena)
         else:
             numeros = cadena.split(",")
-            promedio = (float(numeros[0])+float(numeros[1]))/2
-            return promedio
+            promedio = 0
+            i=0
+            for num in numeros:
+                promedio += float(num)
+                i=i+1
+            return promedio/i
