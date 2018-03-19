@@ -2,4 +2,7 @@ _author_ = 'Pablo Alvarado';
 
 class Calculadora:
     def leer(self,cadena):
-        return 0
+        if cadena=="":
+            return 0
+        else:
+            return float(cadena)
