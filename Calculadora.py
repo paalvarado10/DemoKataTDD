@@ -7,3 +7,7 @@ class Calculadora:
         else:
             numeros = cadena.split(",")
             return len(numeros)
+
+
+    def minimo(self):
+        pass
