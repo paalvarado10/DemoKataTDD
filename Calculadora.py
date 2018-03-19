@@ -12,5 +12,11 @@ class Calculadora:
     def minimo(self,cadena):
         if cadena=="":
             return 0
+        elif len(cadena)==1:
+            return float (cadena)
         else:
-            return float(cadena)
+            numeros = cadena.split(",")
+            if(numeros[0]>numeros[1]):
+                return float(numeros[1])
+            else:
+                return float(numeros[0])
