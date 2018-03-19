@@ -36,5 +36,5 @@ class Calculadora:
                     max=float(num)
             return max
 
-    def prom(self):
-        pass
+    def prom(self, cadena):
+        return 0
