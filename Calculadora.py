@@ -49,3 +49,11 @@ class Calculadora:
                 promedio += float(num)
                 i=i+1
             return promedio/i
+
+    def calculate(self, cadena):
+        num =self.leer(cadena)
+        minimo = self.minimo(cadena)
+        maximo = self.max(cadena)
+        promedio = self.prom(cadena)
+        ans = [num,minimo,maximo,promedio]
+        return ans

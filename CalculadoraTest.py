@@ -65,3 +65,6 @@ class CalculadoraTest(TestCase):
         self.assertEqual(Calculadora().prom("2,3,1"), 2, "tres numeros ")
         self.assertEqual(Calculadora().prom("2,1,1,4"), 2, "cuatro numeros ")
 
+    def test_array(self):
+        self.assertEqual(Calculadora().calculate("2,3,1"),[3,1,3,2], "tres numeros ")
+
