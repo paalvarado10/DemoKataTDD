@@ -25,3 +25,8 @@ class CalculadoraTest(TestCase):
 
     def test_minimo_dos_numeros(self):
         self.assertEqual(Calculadora().minimo("1,2"),1,"Dos numeros ")
+
+
+    def test_minimo_n_numeros(self):
+        self.assertEqual(Calculadora().minimo("2,3,1"),1,"tres numeros ")
+        self.assertEqual(Calculadora().minimo("2,4,1,3"),1, "cuatro numeros ")

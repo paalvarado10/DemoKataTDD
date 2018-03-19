@@ -20,3 +20,4 @@ class Calculadora:
                 return float(numeros[1])
             else:
                 return float(numeros[0])
+
