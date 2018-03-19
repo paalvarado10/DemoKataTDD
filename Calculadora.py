@@ -35,3 +35,6 @@ class Calculadora:
                 if(float(num)>max):
                     max=float(num)
             return max
+
+    def prom(self):
+        pass

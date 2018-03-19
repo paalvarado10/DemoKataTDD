@@ -47,3 +47,7 @@ class CalculadoraTest(TestCase):
         self.assertEqual(Calculadora().max("2,1,3"),3,"tres numeros ")
         self.assertEqual(Calculadora().max("2,1,1,4"),4,"cuatro numeros ")
 
+
+    def test_promedio(self):
+        self.assertEqual(Calculadora().prom(""),0,"Cadena Vacia")
+
