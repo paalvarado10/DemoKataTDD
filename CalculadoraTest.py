@@ -8,7 +8,7 @@ class CalculadoraTest(TestCase):
 
     def test_leer_un_numero(self):
         self.assertEqual(Calculadora().leer("1"),1,"Un numero")
-        self.assertEqual(Calculadora().leer("2"), 2, "Un numero")
+        self.assertEqual(Calculadora().leer("2"), 1, "Un numero")
 
 
     def test_leer_dos_numero(self):

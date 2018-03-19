@@ -5,4 +5,5 @@ class Calculadora:
         if cadena=="":
             return 0
         else:
-            return float(cadena)
+            numeros = cadena.split(",")
+            return len(numeros)
