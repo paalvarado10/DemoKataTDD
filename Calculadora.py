@@ -16,8 +16,8 @@ class Calculadora:
             return float (cadena)
         else:
             numeros = cadena.split(",")
-            if(numeros[0]>numeros[1]):
-                return float(numeros[1])
-            else:
-                return float(numeros[0])
-
+            minimo = 10000
+            for num in numeros:
+                if(float(num)<minimo):
+                    minimo=float(num)
+            return minimo
