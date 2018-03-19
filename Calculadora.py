@@ -21,3 +21,7 @@ class Calculadora:
                 if(float(num)<minimo):
                     minimo=float(num)
             return minimo
+
+
+    def max(self, cadena):
+        return 0
