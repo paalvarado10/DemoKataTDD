@@ -21,3 +21,7 @@ class CalculadoraTest(TestCase):
 
     def test_minimo_un_numero(self):
         self.assertEqual(Calculadora().minimo("1"),1,"Cadena Vacia")
+
+
+    def test_minimo_dos_numeros(self):
+        self.assertEqual(Calculadora().minimo("1,2"),1,"Cadena Vacia")
