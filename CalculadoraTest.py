@@ -33,3 +33,6 @@ class CalculadoraTest(TestCase):
 
     def test_max(self):
         self.assertEqual(Calculadora().max(""),0,"Cadena Vacia")
+
+    def test_max_un_numero(self):
+        self.assertEqual(Calculadora().max("1"), 1, "Un numero")
