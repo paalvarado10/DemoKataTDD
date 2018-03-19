@@ -39,5 +39,9 @@ class Calculadora:
     def prom(self, cadena):
         if cadena =="":
             return 0
-        else:
+        elif len(cadena.split(","))==1:
             return float(cadena)
+        else:
+            numeros = cadena.split(",")
+            promedio = (float(numeros[0])+float(numeros[1]))/2
+            return promedio
