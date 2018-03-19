@@ -60,3 +60,8 @@ class CalculadoraTest(TestCase):
     def test_prom_dos_numeros(self):
         self.assertEqual(Calculadora().prom("2,2"),2,"Dos numeros ")
         self.assertEqual(Calculadora().prom("4,2"),3, "Dos numeros ")
+
+    def test_prom_n_numeros(self):
+        self.assertEqual(Calculadora().prom("2,3,1"), 2, "tres numeros ")
+        self.assertEqual(Calculadora().prom("2,1,1,4"), 2, "cuatro numeros ")
+
