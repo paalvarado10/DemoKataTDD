@@ -30,3 +30,6 @@ class CalculadoraTest(TestCase):
     def test_minimo_n_numeros(self):
         self.assertEqual(Calculadora().minimo("2,3,1"),1,"tres numeros ")
         self.assertEqual(Calculadora().minimo("2,4,1,0"),0, "cuatro numeros ")
+
+    def test_max(self):
+        self.assertEqual(Calculadora().max(""),0,"Cadena Vacia")
