@@ -9,5 +9,5 @@ class Calculadora:
             return len(numeros)
 
 
-    def minimo(self):
-        pass
+    def minimo(self,cadena):
+        return 0
