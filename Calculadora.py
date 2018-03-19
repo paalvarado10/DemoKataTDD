@@ -26,5 +26,11 @@ class Calculadora:
     def max(self, cadena):
         if cadena=="":
             return 0
-        else:
+        elif len(cadena.split(","))==1:
             return float(cadena)
+        else:
+            numeros = cadena.split(",")
+            if (numeros[0]>numeros[1]):
+                return float(numeros[0])
+            else:
+                return float(numeros[1])
