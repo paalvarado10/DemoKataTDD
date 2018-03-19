@@ -37,3 +37,7 @@ class CalculadoraTest(TestCase):
     def test_max_un_numero(self):
         self.assertEqual(Calculadora().max("1"), 1, "Un numero")
         self.assertEqual(Calculadora().max("10"), 10, "Un numero")
+
+    def test_max_dos_numeros(self):
+        self.assertEqual(Calculadora().max("1,2"),2,"Dos numeros ")
+        self.assertEqual(Calculadora().max("4,2"),4, "Dos numeros ")
