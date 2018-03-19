@@ -37,4 +37,7 @@ class Calculadora:
             return max
 
     def prom(self, cadena):
-        return 0
+        if cadena =="":
+            return 0
+        else:
+            return float(cadena)
