@@ -55,3 +55,8 @@ class CalculadoraTest(TestCase):
     def test_promedio_un_numero(self):
         self.assertEqual(Calculadora().prom("1"), 1, "Un numero")
         self.assertEqual(Calculadora().prom("10"), 10, "Un numero")
+
+
+    def test_prom_dos_numeros(self):
+        self.assertEqual(Calculadora().prom("2,2"),2,"Dos numeros ")
+        self.assertEqual(Calculadora().prom("4,2"),3, "Dos numeros ")
