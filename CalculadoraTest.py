@@ -18,3 +18,6 @@ class CalculadoraTest(TestCase):
 
     def test_minimo(self):
         self.assertEqual(Calculadora().minimo(""),0,"Cadena Vacia")
+
+    def test_minimo_un_numero(self):
+        self.assertEqual(Calculadora().minimo("1"),1,"Cadena Vacia")
